@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <nav class="sidebar">
+    <h2>Admin Panel</h2>
+    <ul class="nav-links">
+      <li><a href="#user-management" class="active">User Account Management</a></li>
+      <li><a href="#content-moderation">Content Moderation</a></li>
+      <li><a href="#analytics">Analytics</a></li>
+      <button type="submit">Log out</button>
+    </ul>
+  </nav>
+  <div class="main-content">
+    <section class="section" id="user-management">
+      <h3>User Account Management</h3>
+      <p>Manage user accounts, view user lists, add, edit, or remove users.</p>
+      <!-- Add user management controls here -->
+    </section>
+    <section class="section" id="content-moderation">
+      <h3>Content Moderation</h3>
+      <p>Review and moderate user-generated content, approve or reject posts, and handle reports.</p>
+      <!-- Add content moderation controls here -->
+    </section>
+    <section class="section" id="analytics">
+      <h3>Analytics</h3>
+      <p>View site analytics, user activity, and other relevant statistics.</p>
+      <!-- Add analytics widgets here -->
+    </section>
+    
+  </div>
+
+    <script>
+        // JavaScript for sidebar navigation
+        document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', function() {
+            document.querySelectorAll('.nav-links a').forEach(l => l.classList.remove('active'));
+            this.classList.add('active');
+        });
+        });
+    </script>
+</body>

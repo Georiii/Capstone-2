@@ -70,3 +70,65 @@ body {
       font-size: 1rem;
       transition: background 0.2s;
     }
+
+    .user-stats {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.stat-box {
+  background: #f4f6fb;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(139,80,240,0.07);
+  min-width: 120px;
+}
+.stat-title {
+  color: #8b50f0;
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #222;
+}
+.user-filters {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  background: #f4f6fb;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.search-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.search-bar input[type="text"] {
+  padding: 0.5rem 2.2rem 0.5rem 0.8rem;
+  border: 1px solid #8b50f0;
+  border-radius: 4px;
+  font-size: 1rem;
+  background: #fff;
+}
+.search-btn {
+  position: absolute;
+  right: 0.3rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.user-filters select {
+  padding: 0.5rem 1rem;
+  border: 1px solid #8b50f0;
+  border-radius: 4px;
+  background: #fff;
+  font-size: 1rem;
+}
